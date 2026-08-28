@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaizen Capture — Photography</title>
+<meta name="description" content="Kaizen Capture. Better, frame by frame.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0B0C;
+    --fg:#FAFAF7;
+    --accent:#FF4D2E;
+    --muted:#8A8A84;
+    --line:#232323;
+    --display: 'Anton', sans-serif;
+    --body: 'Inter', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--fg);
+    font-family:var(--body);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+
+  ::selection{background:var(--accent);color:var(--bg);}
+
+  header{
+    position:fixed;top:0;left:0;right:0;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:24px 5vw;
+    z-index:100;
+    mix-blend-mode:difference;
+  }
+  .logo{
+    font-family:var(--mono);
+    font-size:13px;letter-spacing:0.15em;
+    text-transform:uppercase;
+  }
+  .logo b{color:var(--accent);mix-blend-mode:normal;}
+  nav ul{display:flex;gap:32px;list-style:none;}
+  nav a{
+    font-family:var(--mono);font-size:12px;letter-spacing:0.1em;
+    text-transform:uppercase;opacity:0.85;transition:opacity .2s;
+  }
+  nav a:hover{opacity:1;}
+
+  .hero{
+    min-height:100svh;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:0 5vw 6vw;
+    position:relative;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-frame{
+    position:absolute;top:120px;right:5vw;
+    font-family:var(--mono);font-size:12px;color:var(--muted);
+    text-align:right;letter-spacing:0.1em;
+  }
+  .hero-frame span{color:var(--accent);}
+  h1.hero-title{
+    font-family:var(--display);
+    font-weight:4
